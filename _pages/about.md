@@ -3,26 +3,8 @@ layout: page
 title: About
 ---
 
-Sidey is a simple and minimalistic jekyll blogging theme.
+Rose M. London (she/her) is a student of digital humanities & web preservation living in Margate, UK. 
 
-### Features
+She graduated from the Courtauld Institute of Art in 2020, after specialising in digital studies & online communities. She also spent a lot of her degree studying architecture.
 
-- Responsive design
-- Inline CSS
-- Anchor headings
-- Search
-- Tags & tag pages
-- Security headers (for Netlify hosting)
-- 404 page
-- Compressed CSS and HTML
-- 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
-- Robots.txt
-- Atom & Json feeds
-- Sass
-- Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
-- Ultra fast (Only ~5kb of CSS)
-- Sidebar navigation
-
-### Screenshot
-
-![Screenshot](screenshot.png)
+She moved to Yorkshire in 2020 to write poetry and make linoprints. Her poetry is inspired by British history & Jungian psychoanalysis.
