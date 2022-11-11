@@ -9,4 +9,4 @@ She graduated from the Courtauld Institute of Art in 2020, after specialising in
 
 She moved to Yorkshire in 2020 to write poetry and make linoprints. Her poetry is inspired by British history & Jungian psychoanalysis.
 
-Find more creative work at https://rosemargaretlondon.co.uk
+Find more creative work at rosemargaretlondon.co.uk .
