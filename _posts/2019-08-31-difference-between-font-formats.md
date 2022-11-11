@@ -1,18 +1,117 @@
 ---
 layout: post
-title: Difference between font formats
-description: What is the difference between various font formats?
-summary: What is the difference between various font formats?
+title: Stone
+description: Geology is not neutral
+summary: Eighteenth and ninteenth century geological studies
 comments: true
-tags: [typography]
+tags: [art-history]
 ---
+Elizabeth Fraser, when discussing Greek travellers’ art in the eighteenth and
+nineteenth centuries, stated that ‘geography is not neutral.’ I will paraphrase her for this
+essay on stone by stating ‘geology is not neutral.’ In eighteenth and nineteenth century
+classicism, stone was animate. It was the antique material that initially drew tourists to
+Greece and Rome. Stone was the material of pre-scientific geology, yet the residual site of
+pagan Greece. It was both unchanged by time and polymorphic, pliant to contemporary
+issues. Art of this period shares an inability to comprehend this conflicting, inhuman material,
+and artists depicting stone through the decades grapple with blurred lines between natural
+stone and stone antiquities, its role in shaping rising empires, and its role as a catalyst for
+shifts in identity. This tumult of agency helps us to approach Edward Dodwell’s 1834 Views
+and Descriptions of Cyclopian, or, Pelasgic Remains, in Greece and Italy, wherein stones
+are stripped of their symbolic burden and represented simply within their landscapes,
+demonstrating the power of stone within classical thought.
 
-Lorem ipsum dolor amet tousled viral art party blue bottle single-origin coffee cardigan, selvage man braid helvetica. Banh mi taxidermy meditation microdosing. Selvage cornhole YOLO, small batch vexillologist raclette VHS prism sustainable 8-bit ugh semiotics letterpress disrupt pop-up. Celiac shabby chic ugh, jianbing whatever kitsch tattooed edison bulb kogi irony etsy.
+As early as the seventeenth century, the stones of Greece and Rome were
+disconcertingly animate in art. Antoine Desgodetz’s measured antique architectural folio Les
+Edifices Antiques de Rome (1682) is excessive in exactitude. Every plane, niche and
+moulding is delicately measured from multiple angles, with these measurements often taking
+precedence, splicing columns and obfuscating diagrams. The result is described by Bruce
+Redford as the ‘architectural equivalent to a textbook of anatomy’, wherein ‘the muscles are
+sectioned and the vertebrae laid bare.’ This medical analogy is as apt as it is unnerving;
+Desgodetz’s Portique du Pantheon page acquires the air of a dissection, where the skin of
+the capitals is pulled back to facilitate understanding the stone beneath, yet the abstract
+result of Les Edifices instead gives a peturbing organic life to the architecture.
+This mix between rational scientific study and the tangible animacy of stone
+continued with the excavations at Pompeii and Herculaneum during the latter half of the
+eighteenth century. Misinterpretation of the excavated objects encouraged a blurred line
+between the unfamiliar geology and unfamiliar antiquities, and between the animate and the
+inanimate — most unusually evidenced by Samuel Witte’s 1789 An Inquiry into the Origins
+of the Pyramids, which theorised that Egypt’s pyramids were freak accidents of volcanic
+geology, not man-made architecture. Pietro Fabris’s Stones or Crystals from Mount Vesuvius
+visualises this arche-geological confusion. Adopting a still-life composition for seven
+slate-grey crystalline stones, the work adopts a threatening animacy, the glistening black
+crystals appearing wound-like, bleeding. A crystal metal flower is staked into the rocks to
+one side, enhancing the liminality between inanimate material and living nature.
+Fabris’s alien still-life invites consideration of the ‘collecting’ culture intensifying at the
+turn of the nineteenth century. Stones became nationalist traffic in the antiquities arms-race
+after the Napoleonic Wars, gaining a political weight which conflictingly both undermined
+their value and infused them with yet more contemporary agency. Holger Hoock’s Empires of
+the Imagination describes the overview of rapid spoliation of Greece and Rome, what she
+terms ‘state-sponsored archeology as cultural imperialism’, in which stone antiquities
+became a fundamental force in both French and British nineteenth-century nation-building.
+Yet, the stones were often collateral damage in their very acquisition, regularly defaced and
+destroyed: the Thebian bust of ‘Young Memnon’ had a drilled a hole in its right breast by
+collectors in preparation to ‘blow the head off to make the ... statue transportable.’ The
+power of stones was therefore, conflictingly, both within the stones as objects as well as
+entirely divisible to the stone’s physicality. Arguably the most famous nineteenth-century
+spolia, and perhaps the most famous stones of Greece, the Elgin marbles, were depicted in
+their temporary room shortly after being seized in the aim of Britain’s arche-imperialism by
+Archibald Archer in 1819. The ghostly marble of the segmented Parthenon pediment figures
+in The Temporary Elgin Room appear both objectified by the throng of dark-suited
+aristocrats, one of whom has leant a sketchbook against the horse head unceremoniously
+placed on the floor, and as alive as their viewers, animate presences amongst the museum
+visitors. Eerily, the headless torso of the river god Illisos from the west pediment appears to
+be leaning behind the two gentlemen in the left foreground, as if eavesdropping on their
+conversation. Yet as always, these stones evade understanding: Archer found something
+lacking in this great acquisition, and has reconstructed the damaged metopes lining the wall,
+the image of fragmentary stone seemingly at odds with the corresponding image of
+imperialist Britain. Stones were not just neutral objects of acquisition here: they were unruly,
+disruptive, powerful objects.
 
-Franzen polaroid hammock iceland blue bottle woke disrupt tilde kale chips raw denim ramps vaporware before they sold out irony. Narwhal vaporware offal shaman celiac kinfolk activated charcoal salvia lomo irony readymade normcore. Yr activated charcoal kombucha, man braid whatever biodiesel hella crucifix adaptogen bicycle rights small batch skateboard mixtape. Hot chicken sustainable green juice 90's. Ennui kickstarter hella pug, meggings man bun shaman messenger bag. Chambray adaptogen kombucha pug affogato, kogi green juice distillery ugh banh mi.
-
-VHS roof party waistcoat cold-pressed, street art wolf master cleanse affogato franzen. Shaman iceland pour-over intelligentsia typewriter tilde, pitchfork copper mug. Wayfarers kickstarter adaptogen vinyl beard kombucha. Organic pinterest master cleanse, mixtape fam gentrify lo-fi kogi.
-
-Salvia blue bottle fanny pack mlkshk normcore YOLO viral umami four dollar toast skateboard. Chambray taxidermy slow-carb street art chartreuse. Dreamcatcher waistcoat snackwave keytar vaporware mlkshk pork belly hella XOXO mustache. Tattooed semiotics edison bulb, disrupt polaroid craft beer vape enamel pin bespoke flannel letterpress brooklyn subway tile copper mug. Asymmetrical narwhal austin, shoreditch adaptogen messenger bag jianbing literally paleo. Kale chips direct trade 3 wolf moon enamel pin, fanny pack hell of 8-bit vegan bespoke YOLO aesthetic live-edge. Retro succulents before they sold out whatever bushwick.
-
-Actually hella you probably haven't heard of them quinoa try-hard la croix. Street art schlitz actually hell of pour-over air plant. Post-ironic franzen brunch mumblecore readymade. Food truck photo booth polaroid, gochujang vegan street art yr before they sold out man bun. Tilde selfies chia pitchfork everyday carry post-ironic mumblecore sartorial VHS master cleanse activated charcoal biodiesel williamsburg cronut jean shorts. Poutine helvetica keffiyeh butcher pop-up.
+As the nineteenth century progressed, paintings of Greece became more geological.
+Associations with the ‘Klephts’, mountain-dwelling bandits rebelling against Ottoman rule,
+and the Philhellenic movement for Greece independence from the Ottoman Empire
+encouraged artists to advocate a ‘true’ Greek spirit in the land’s rugged terrains, mountains,
+volcanoes, and caves. This particular animacy of Greek stone was not new: Richard Buxton,
+in his consideration of peripheral mountainous areas, describes how the topos of idealised
+Greece — the myth, the gods, the nature and freedom, all stem from the Greek nature:
+‘[Greek] mental landscape was constituted by their perception of the various elements ...
+rivers, plains, cities, caves, springs, crossroads, meadows, mountains.’ Nineteenth century
+art such as Edward Lear’s The walls of ancient Sami exemplify this oros animacy with its
+focus not on picturesque Greek views or historic cities, but a withdrawal to isolated
+mountaintops of bare stone from which only distant shadows of rolling mountain ranges can
+be seen. These oros stones gained a particular animacy for travelling individuals as spaces
+for projection. Buxton describes how the oros was ‘a height outside inhabited and cultivated
+space’, an ‘initiatory space’ where ‘normal social behaviour may be reversed’, and this
+agency extended to the stones of other lands laden with Greco-Roman history such as
+Naples. In a 1767 letter, Johann Joachim Winckelmann describes how a visit to the
+mountaintop of Vesuvius allowed for Buxton’s ‘reversed’ social behaviour when he ‘grilled
+pigeons over the lava stream’, recounting in third person how ‘Winkelmann had his dinner,
+naked like a cyclops.’ His self-referent third person suggests a disconnect between his
+acceptable, civilised identity and the Klepht-like ancient freedom catalysed by the rugged
+volcanic tuff stone surroundings, and his transformation into a cyclops — the primordial
+subterranean monsters who forged with base materials in the depths of the earth —
+suggests the oros had a power to both change him and allow a connection to an archaic,
+spiritual chthonicism, through raw contact with the stone.
+All of these varying, conflicting ways in which stones exerted an inhuman agency
+over artists, travellers and writers can help understand the animate quality in the engravings
+of Dodwell’s Descriptions of Cyclopian, or, Pelasgic Remains. Intended as an appendix to
+his Classical and Topographical Tour, the illustrations are often ruinous stone gates and
+walls, composed of rough unornamented brick and cubic slabs typical of Mycenaean
+stonework. Dodwell’s term ‘Cyclopian’ refers to the belief that only the strength of the
+Cyclops could move such heavy boulders to construct such walls as at Mycenae and Tiryns,
+echoing Witte’s pre-scientific misinterpretation of stonework. Dodwell’s excessively careful,brick-by-brick illustrations of walls and stones seem a descendent of Desgodetz’s rational
+antique delineation, yet their embedding in the landscape is similar to Edward Lear’s rugged
+terrain invoking a Greece unscarred by Ottoman oppression. In Dodwell’s illustration entitled
+Remains of the gate of ancient Myonia, man-made rectilinear wall-stones fall under the
+weight of time and become natural, geological rocks in the foreground, embedded into the
+soil. Yet, the collapsed centre seems freshly-fallen, clean and un-weathered, as if these
+ancient stones are still moving, alive and active — echoing Lear’s Walls of Ancient Sami,
+where a single Cyclopian-style stone slab pivots in its place slightly. Dodwell’s lone Greek
+figure in Remains faces away from us, staring melancholically at the fallen rocks,
+heightening this recurring motif of alien life-force within ancient stones. There is something in
+Dodwell’s Descriptions that belies early nineteenth-century spoliation, too: his works do not
+lay claim to these ancient rocks, which in their undifferentiated, pure stone, are neither
+antiquities nor are purely pieces of nature. Geology and stones were never a neutral, placid
+material on which the politics of classism was played — they were active in shaping the
+forms of travellers’ art in the eighteenth and nineteenth centuries, and their disruptive power
+continues to play havoc with classical studies to this day.
