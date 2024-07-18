@@ -1,4 +1,5 @@
+User-agent: *
+Disallow: /about
+
 User-agent: testingagent
 Crawl-delay: 10
-
-Disallow: /about
