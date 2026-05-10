@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myrtle cross</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<!-- ticket tape poetry idea in footer! -->
+<div class="ticker-wrap">
+  <span id="ticker-text"></span><span class="ticker-cursor">|</span>
+</div>
+
+<body>
+
+  <div id="cursor">+</div>
+
+  <div class="canvas">
+
+    <div class="site-title">
+      myrtle cross index
+      <span class="tagline">multi-disciplinary artist, writer, project maker</span>
+    </div>
+
+    <a class="nav-link link-art"       href="art.html">art</a>
+    <a class="nav-link link-writing"   href="writing.html">writing</a>
+    <a class="nav-link link-coding"    href="coding.html">coding projects</a>
+    <a class="nav-link link-other"     href="other.html">other projects</a>
+    <a class="nav-link link-ff"        href="forging-fragments.html">forging fragments</a>
+    <a class="nav-link link-instagram" href="https://instagram.com/myrtlecrosss" target="_blank">instagram</a>
+    <a class="nav-link link-shop"      href="https://rosemargaret.bigcartel.com/" target="_blank">shop</a>
+    <a class="nav-link link-substack"      href="https://myrtlecross.substack.com/" target="_blank">substack</a>
+    <a class="nav-link link-about"      href="about.html">about</a>
+
+    <img class="photo photo-01" src="images/index/photo-01.jpg" alt="01" draggable="false">
+    <img class="photo photo-02" src="images/index/photo-02.jpg" alt="02" draggable="false">
+    <img class="photo photo-03" src="images/index/photo-03.jpg" alt="03" draggable="false">
+    <img class="photo photo-04" src="images/index/photo-04.jpg" alt="04" draggable="false">
+    <img class="photo photo-05" src="images/index/photo-05.jpg" alt="05" draggable="false">
+    <img class="photo photo-06" src="images/index/photo-06.jpg" alt="06" draggable="false">
+
+    <p class="updated">updated: may 2026</p>
+
+  </div>
+
+  <script>
+    // custom chisel cursor :3
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+
+    // draggable photos code needs debugging
+    document.querySelectorAll('.photo').forEach(photo => {
+      photo.addEventListener('mousedown', e => {
+        e.preventDefault();
+        const rect = photo.getBoundingClientRect();
+        photo.style.top  = rect.top  + window.scrollY + 'px';
+        photo.style.left = rect.left + 'px';
+        const offsetX = e.clientX - rect.left;
+        const offsetY = e.clientY - rect.top;
+
+        photo.style.zIndex = 10; // bring to front over title
+
+        const onMove = e => {
+          photo.style.left = (e.clientX - offsetX) + 'px';
+          photo.style.top  = (e.clientY - offsetY) + 'px';
+        };
+
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('mouseup', () => {
+          document.removeEventListener('mousemove', onMove);
+          photo.style.zIndex = 2;
+        }, { once: true });
+      });
+    });
+
+  // ticket tape poetry from old website
+const lines = [
+  "I am going walking among the various intersecting planes",
+"I am going wandering around the city and then around the countryside",
+"We gravitate towards nodes",
+"I am centred around stones",
+"In the centre of my sternum there is a tattoo of a spiral",
+"Like the eroded finger-marks of cup-and-ring-marks, broken lines",
+"My heart beats under it",
+"I hold the land close when i get to a node",
+"Walking from one fork to another",
+"Walking from one junction to another",
+"Walking from one branching intersection to another",
+"This land is knit together by stones",
+"Mud-slip up the hill, the land is a body",
+"The land is a body",
+"The land is a body"
+];
+
+// below stuff is a load of js to get it to look like its typing
+const el = document.getElementById('ticker-text');
+let lineIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function type() {
+  const current = lines[lineIndex];
+
+  if (!deleting) {
+    el.textContent = current.slice(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === current.length) {
+      deleting = true;
+      setTimeout(type, 1800);
+      return;
+    }
+    setTimeout(type, 55);
+  } else {
+    el.textContent = current.slice(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      deleting = false;
+      lineIndex = (lineIndex + 1) % lines.length;
+      setTimeout(type, 400);
+      return;
+    }
+    setTimeout(type, 28);
+  }
+}
+
+type();
+
+  </script>
+
+</body>
+</html>

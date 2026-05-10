@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about — myrtle cross</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .about-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .headshot-wrap {
+      margin: 2rem 0 2.5rem;
+    }
+
+    .headshot-wrap img {
+      width: 220px;
+      display: block;
+      box-shadow: 3px 4px 14px rgba(0,0,0,0.2);
+      transform: rotate(0deg);
+    }
+
+    .headshot-wrap .photo-credit {
+      font-size: 0.7rem;
+      color: var(--muted);
+      background-color: rgba(245, 240, 224, 0.7);
+      padding: 0.1em 0.4em;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transform: rotate(-1.5deg);
+      margin-left: 4px;
+    }
+
+    .bio {
+      background-color: rgba(245, 240, 224, 0.82);
+      padding: 1.4em 1.6em;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    .bio p {
+      font-size: 0.9rem;
+      margin-bottom: 1em;
+    }
+
+    .bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-block {
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-block h3 {
+      background-color: rgba(245, 240, 224, 0.85);
+      padding: 0.1em 0.5em;
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .social-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .social-list li {
+      margin-bottom: 0.6rem;
+    }
+
+    .social-list a {
+      background-color: rgba(245, 240, 224, 0.75);
+      padding: 0.15em 0.5em;
+      display: inline-block;
+      font-size: 0.88rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      transition: background-color 0.15s;
+    }
+
+    .social-list a:hover {
+      background-color: #fff;
+      color: var(--text);
+    }
+
+    .social-list a::before {
+      content: '→ ';
+      color: var(--muted);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="cursor">+</div>
+
+  <div class="about-wrap">
+
+    <p class="breadcrumb"><a href="index.html">myrtle cross</a> / about</p>
+
+    <h1><span class="tape">myrtle cross</span></h1><br>
+
+    <div class="headshot-wrap">
+      <img src="images/me.jpg" alt="myrtle cross">
+    </div>
+
+    <div class="bio">
+      <p>
+        myrtle cross is the art pseudonym I chose four years ago and it has stuck. 
+        <br>
+        <br>
+        I'm Rose, I'm a multidisciplinary artist, writer, gardener and engineer.
+
+      </p>
+      <p>
+        I make collographs from industrial materials to mimic surfaces of tools, and forge the tools
+        themselves in steel. The same objects in ink and in metal. I write about rhizomes, technology, the female body, and Manchester, the city where I live.
+        i'm interested in the continuity between making disciplines —
+        the way knowledge lives in the hand rather than on the page.
+      </p>
+      <p>
+        I am currently undertaking forging fragments, a practice-led research
+        project supported by arts council england, developing my forging skills and the history of hand tools in print.
+      </p>
+      <p>
+        i am not available for commissions at the moment.
+      </p>
+    </div>
+
+    <div class="contact-block">
+      <h3>contact</h3>
+      <ul class="social-list">
+        <li><a href="mailto:roselondon2@gmail.com">roselondon2@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="contact-block">
+      <h3>elsewhere</h3>
+      <ul class="social-list">
+        <li><a href="https://instagram.com/myrtlecrosss" target="_blank">instagram</a></li>
+        <li><a href="https://www.are.na/myrtle-cross/all" target="_blank">are.na</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      <a href="index.html"><span class="tape">← index</span></a>
+    </footer>
+
+  </div>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>

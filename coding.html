@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coding projects — myrtle cross</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body class="inner-page">
+
+  <div id="cursor">+</div>
+// gonna make this the same page type across all the project pages 
+  <main>
+
+    <p class="breadcrumb"><a href="index.html">myrtle cross</a> / coding projects</p>
+
+    <h1><span class="tape">coding projects</span></h1>
+    <h2><span class="tape">experiments in js art and web archiving</span></h2>
+
+    <ul class="writing-list">
+
+      <li>
+        <img class = "project-image" src="images/81648dbd-99d7-4c8c-8569-f831e8b7ab80_1600x734.png" alt="map" draggable="true">
+        <p class="title">
+          <a href="https://rosemlondon.github.io/stones/">pulling down the stones - 2024</a>
+        </p>
+        <p class="meta">full blog post about this work here:</p>
+        <p><a href="https://myrtlecross.substack.com/p/pulling-down-the-stones-network-graph" target="_blank">pulling down the stones network graph</a></p>
+        <p> Pulling down the stones is a walking journal and data visualisation experiment, mapping the landmarks of the Old Stones pilgrimage - a three-day walk through the main neolithic monuments across the peak district - onto a 3D force-directed node graph. </p>
+        <p>  This force-directed graph algorithm operates on the proximity of words and phrases ('tokens') within a sentence, and the shared repetition of those tokens within the text input. Forces then mimic attraction and repulsion to represent the strength of their connections, like roads between towns. This algorithm helps to visually organize and reveal the underlying structure of complex networks. </p>
+      </li>
+
+            <li>
+              <img class = "project-image" src="images/1ae5d0ff-ba16-4b08-84a8-913005bc50b5_2368x1420.webp" alt="map" draggable="true">
+        <p class="title">
+          <a href="https://myrtlecross.substack.com/p/i-built-a-website-that-stores-and">phosphene walker - 2026</a>
+        </p>
+        <p class="meta">pinterest archive and rhizomal map generator</p>
+        <p> Recontextualising the archive of my Pinterest account into a rhizomatic map word-associated with timestamped journals. Meant to be a memory project. Website isn't public.</p>
+      </li>
+
+
+    </ul>
+
+    <footer>
+      <a href="index.html"><span class="tape">← index</span></a>
+    </footer>
+
+  </main>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>
