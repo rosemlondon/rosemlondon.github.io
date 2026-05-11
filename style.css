@@ -536,3 +536,49 @@ body.inner-page main p:not(.title):not(.meta) {
   margin-bottom: 1.2rem;
   display: table;
 }
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  max-width: 500px;
+}
+
+.carousel-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 0.6rem;
+  transition: transform 0.35s ease;
+}
+
+.carousel-track img {
+  width: 60%;
+  flex-shrink: 0;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  opacity: 0.5;
+  transition: opacity 0.35s ease;
+}
+
+.carousel-track img.active {
+  opacity: 1;
+}
+
+.carousel-btn {
+  background: rgba(245, 240, 224, 0.85);
+  border: none;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--text);
+  padding: 0.3em 0.5em;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  background: #fff;
+}

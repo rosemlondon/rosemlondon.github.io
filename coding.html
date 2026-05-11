@@ -10,34 +10,74 @@
   <body class="inner-page">
 
   <div id="cursor">+</div>
-// gonna make this the same page type across all the project pages 
   <main>
 
     <p class="breadcrumb"><a href="index.html">myrtle cross</a> / coding projects</p>
 
     <h1><span class="tape">coding projects</span></h1>
-    <h2><span class="tape">experiments in js art and web archiving</span></h2>
+    <h2><span class="tape">digital art and web archiving</span></h2>
 
     <ul class="writing-list">
 
       <li>
-        <img class = "project-image" src="images/81648dbd-99d7-4c8c-8569-f831e8b7ab80_1600x734.png" alt="map" draggable="true">
+        <div class="carousel">
+          <button class="carousel-btn prev">←</button>
+          <div class="carousel-window">
+            <div class="carousel-track">
+            <img src="images/coding-projects/Screen Recording 2026-05-11 at 18.06.22.gif" alt="screenshot">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.56.52.png" alt="screenshot">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.56.56.png" alt="screenshot">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.58.46.png" alt="screenshot">
+          </div>
+        </div>
+        <button class="carousel-btn next">→</button>
+      </div>
         <p class="title">
           <a href="https://rosemlondon.github.io/stones/">pulling down the stones - 2024</a>
         </p>
         <p class="meta">full blog post about this work here:</p>
-        <p><a href="https://myrtlecross.substack.com/p/pulling-down-the-stones-network-graph" target="_blank">pulling down the stones network graph</a></p>
+        <p><a href="https://myrtlecross.substack.com/p/pulling-down-the-stones-network-graph" target="_blank"> >> pulling down the stones network graph</a></p>
         <p> Pulling down the stones is a walking journal and data visualisation experiment, mapping the landmarks of the Old Stones pilgrimage - a three-day walk through the main neolithic monuments across the peak district - onto a 3D force-directed node graph. </p>
         <p>  This force-directed graph algorithm operates on the proximity of words and phrases ('tokens') within a sentence, and the shared repetition of those tokens within the text input. Forces then mimic attraction and repulsion to represent the strength of their connections, like roads between towns. This algorithm helps to visually organize and reveal the underlying structure of complex networks. </p>
       </li>
 
             <li>
-              <img class = "project-image" src="images/1ae5d0ff-ba16-4b08-84a8-913005bc50b5_2368x1420.webp" alt="map" draggable="true">
+              <div class="carousel">
+          <button class="carousel-btn prev">←</button>
+          <div class="carousel-window">
+            <div class="carousel-track">
+            <img src="images/coding-projects/phosphenes-04.png" alt="screenshot">
+            <img src="images/coding-projects/phosphenes-05.png" alt="screenshot">
+            <img src="images/coding-projects/phosphenes-06.png" alt="screenshot">
+            <img src="images/coding-projects/phosphenes-1.webp" alt="screenshot">
+          </div>
+        </div>
+        <button class="carousel-btn next">→</button>
+      </div>
         <p class="title">
           <a href="https://myrtlecross.substack.com/p/i-built-a-website-that-stores-and">phosphene walker - 2026</a>
         </p>
         <p class="meta">pinterest archive and rhizomal map generator</p>
         <p> Recontextualising the archive of my Pinterest account into a rhizomatic map word-associated with timestamped journals. Meant to be a memory project. Website isn't public.</p>
+      </li>
+
+      <li>
+              <div class="carousel">
+          <button class="carousel-btn prev">←</button>
+          <div class="carousel-window">
+            <div class="carousel-track">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.58.19.png" alt="screenshot">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.58.23.png" alt="screenshot">
+            <img src="images/coding-projects/Screenshot 2026-05-11 at 17.58.37.png" alt="screenshot">
+          </div>
+        </div>
+        <button class="carousel-btn next">→</button>
+      </div>
+        <p class="title">
+          <a href="https://www.fragmentarchive.com/index.html">fragment archive - 2024</a>
+        </p>
+        <p class="meta">fragment archive is my personal web archive</p>
+      <p>Built and run using legacy open source web archiving technology (heritrix, pywb, occasionally browsertrix) in order to archive and collect my own internal internet.</p>
       </li>
 
 
@@ -50,12 +90,32 @@
   </main>
 
   <script>
-    const cursor = document.getElementById('cursor');
-    document.addEventListener('mousemove', e => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top  = e.clientY + 'px';
-    });
+    document.querySelectorAll('.carousel').forEach(carousel => {
+  const track = carousel.querySelector('.carousel-track');
+  const imgs  = [...carousel.querySelectorAll('img')];
+  const prev  = carousel.querySelector('.prev');
+  const next  = carousel.querySelector('.next');
+  let current = 0;
+
+  imgs[0].classList.add('active');
+
+  function show(n) {
+    imgs[current].classList.remove('active');
+    current = (n + imgs.length) % imgs.length;
+    imgs[current].classList.add('active');
+
+    // slide so active image is centred with peek on each side
+    const imgWidth = imgs[0].offsetWidth + 10;  // 10 = gap in px
+    const offset = current * imgWidth - (track.parentElement.offsetWidth * 0.2);
+    track.style.transform = `translateX(-${Math.max(0, offset)}px)`;
+  }
+
+  prev.addEventListener('click', () => show(current - 1));
+  next.addEventListener('click', () => show(current + 1));
+  setInterval(() => show(current + 1), 8500);
+});
   </script>
 
 </body>
 </html>
+
