@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the scythe — forging fragments</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-wrap { max-width: 680px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+    .post-title-full { font-size: 1.4rem; font-weight: normal; text-transform: lowercase; background-color: rgba(245,240,224,0.9); padding: 0.2em 0.6em; display: inline-block; border-left: 3px solid var(--muted); margin-bottom: 1.5rem; letter-spacing: 0.04em; }
+    .post-body p { font-size: 0.9rem; line-height: 1.9; margin-bottom: 1.2em; }
+    .post-images { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.6rem; margin: 1.5rem 0; }
+    .post-images img { width: 100%; aspect-ratio: 4/3; object-fit: cover; box-shadow: 2px 3px 8px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="inner-page">
+  <div id="cursor">+</div>
+  <div class="post-wrap">
+    <p class="breadcrumb"><a href="../index.html">myrtle cross</a> / <a href="../forging-fragments.html">forging fragments</a> / the scythe</p>
+    <p class="post-date" style="background:rgba(245,240,224,0.75);padding:0.1em 0.5em;display:inline-block;font-size:0.72rem;color:var(--muted);letter-spacing:0.1em;margin-bottom:0.4rem;">01 december 2025</p><br>
+    <h1 class="post-title-full">the scythe</h1>
+    <div class="post-body">
+      <p>It was raining pretty hard outside the workshop, but it's always warm in there because of the forge. Today we started on my first project that I've suggested myself - a scythe, for chopping down weeds, or ideally collecting herbs.</p>
+      <p>We started off from some scrap spring steel, so the first day was mostly straightening out and flattening this bar. After we'd finished, I was surprised how straight I'd got it!</p>
+      <!-- IMAGE SLOTS
+      <div class="post-images">
+        <img src="../images/blog/scythe-01.jpg" alt="">
+        <img src="../images/blog/scythe-02.jpg" alt="">
+        <img src="../images/blog/scythe-03.jpg" alt="">
+      </div>
+      -->
+    </div>
+    <footer><a href="../forging-fragments.html"><span class="tape">← back to blog</span></a></footer>
+  </div>
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => { cursor.style.left = e.clientX+'px'; cursor.style.top = e.clientY+'px'; });
+  </script>
+</body>
+</html>
