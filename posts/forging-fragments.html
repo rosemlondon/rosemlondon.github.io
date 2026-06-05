@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forging fragments — myrtle cross</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .ff-wrap {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    .project-block {
+      background-color: rgba(245, 240, 224, 0.82);
+      padding: 1.6em 1.8em;
+      margin: 2rem 0 1.5rem;
+      font-size: 0.9rem;
+      line-height: 1.9;
+    }
+
+    .project-block p {
+      margin-bottom: 1em;
+      font-size: 0.9rem;
+    }
+
+    .project-block p:last-child { margin-bottom: 0; }
+
+    .funding {
+      font-size: 0.75rem;
+      color: var(--muted);
+      background-color: rgba(245, 240, 224, 0.6);
+      padding: 0.3em 0.6em;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    /* BLOG HEADER + SORT BUTTON */
+    .blog-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .sort-btn {
+      font-family: var(--font);
+      font-size: 0.72rem;
+      background-color: rgba(245, 240, 224, 0.75);
+      border: none;
+      padding: 0.2em 0.6em;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: lowercase;
+      cursor: pointer;
+    }
+
+    .sort-btn:hover {
+      background-color: #fff;
+      color: var(--text);
+    }
+
+    /* EACH POST */
+    .post {
+      margin-bottom: 4rem;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid rgba(107, 80, 64, 0.2);
+    }
+
+    .post:last-of-type { border-bottom: none; }
+
+    .post-date {
+      background-color: rgba(245, 240, 224, 0.75);
+      padding: 0.1em 0.5em;
+      display: inline-block;
+      font-size: 0.72rem;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: lowercase;
+      margin-bottom: 0.4rem;
+    }
+
+    /* TITLE — bigger and more prominent */
+    .post-title {
+      background-color: rgba(245, 240, 224, 0.9);
+      padding: 0.2em 0.6em;
+      display: inline-block;
+      font-size: 1.2rem;
+      font-weight: normal;
+      color: var(--text);
+      text-transform: lowercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 1.2rem;
+      border-left: 3px solid var(--muted);   /* left rule makes it read as a heading */
+    }
+
+    /* PREVIEW TEXT */
+    .post-preview {
+      font-size: 0.9rem;
+      line-height: 1.9;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    /* READ MORE LINK */
+    .read-more {
+      display: inline-block;
+      font-family: var(--font);
+      font-size: 0.78rem;
+      background-color: rgba(245, 240, 224, 0.75);
+      padding: 0.2em 0.6em;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+
+    .read-more:hover {
+      background-color: #fff;
+      color: var(--text);
+    }
+
+    .read-more::after { content: ' →'; }
+
+    /* THREE IMAGE SLOTS */
+    .post-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem;
+      margin-top: 1.2rem;
+    }
+
+    .post-images img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      box-shadow: 2px 3px 8px rgba(0,0,0,0.15);
+    }
+
+    /* if only 1 or 2 images uncommented, grid still looks fine */
+
+  </style>
+</head>
+<body>
+
+  <div id="cursor">+</div>
+
+  <div class="ff-wrap">
+
+    <p class="breadcrumb"><a href="index.html">myrtle cross</a> / forging fragments</p>
+
+    <h1><span class="tape">forging fragments</span></h1><br>
+    <h2><span class="tape">an arts council funded project</span></h2>
+
+    <div class="project-block">
+      <p>
+        forging fragments is a practice-led research project marking
+        a continuity between printmaking and blacksmithing through
+        the history of hand tools. it is supported by arts council england.
+      </p>
+      <p>
+        the project began with observing that the tools i used
+        to make prints — gouges, chisels, brayers — were themselves
+        objects of complex material history. forged by hand & worn by use,
+        & carrying the marks of their makers. i wanted to understand how
+        to make them, not just use them.
+      </p>
+      <p>
+        over twelve months i am training with predominantly female blacksmiths, learning to forge
+        replica historical tools, and documenting the process through
+        prints, photographs, and writing. this page is the record of that work.
+      </p>
+    </div>
+
+    <p class="funding">supported by arts council england · national lottery project grant</p>
+
+    <!-- BLOG HEADER + SORT -->
+    <div class="blog-header">
+      <h2><span class="tape">project blog</span></h2>
+      <button class="sort-btn" id="sort-btn">↕ oldest first</button>
+    </div>
+
+    <!-- POSTS CONTAINER — JS reads and reverses this list for sorting -->
+    <div id="posts-container">
+
+      <!-- ============================================================
+           HOW TO ADD A NEW POST:
+           1. Copy one <article class="post"> block
+           2. Paste it at the TOP of #posts-container (newest first)
+           3. Fill in date, title, data-date (YYYY-MM-DD), preview text
+           4. Update the read-more href to point to the post's own page
+           5. Uncomment image lines and add your filenames
+           ============================================================ -->
+
+      <!-- POST 1 — newest -->
+      <article class="post" data-date="2026-04-12">
+        <p class="post-date">12 april 2026</p>
+        <h3 class="post-title">arts council grant</h3>
+        <p class="post-preview">
+          Overwhelmingly happy to say that I was awarded the Arts Council NLPG grant I applied for in December!!!! I've felt that blacksmithing is the next step for my arts practice for a while, but if you're someone like me, who does not have any spare cash...
+        </p>
+        <a class="read-more" href="posts/arts-council-grant.html">read more</a>
+        <!-- IMAGE SLOTS — uncomment and fill in filenames as needed -->
+        <!--
+        <div class="post-images">
+          <img src="images/blog/grant-01.jpg" alt="">
+          <img src="images/blog/grant-02.jpg" alt="">
+          <img src="images/blog/grant-03.jpg" alt="">
+        </div>
+        -->
+      </article>
+
+      <!-- POST 2 -->
+      <article class="post" data-date="2026-03-03">
+        <p class="post-date">03 march 2026</p>
+        <h3 class="post-title">aluminium etching with copper sulphate</h3>
+        <p class="post-preview">
+          I have been trying to think of metalworking I can do in my little art studio, while I'm waiting to get started on my project. I have quite a lot of aluminium plates in my drawers from my printmaking course — so I've bought some copper sulphate and salt in order to etch them...
+        </p>
+        <a class="read-more" href="posts/aluminium-etching.html">read more</a>
+        <!--
+        <div class="post-images">
+          <img src="images/blog/alu-01.jpg" alt="">
+          <img src="images/blog/alu-02.jpg" alt="">
+          <img src="images/blog/alu-03.jpg" alt="">
+        </div>
+        -->
+      </article>
+
+      <!-- POST 3 -->
+      <article class="post" data-date="2026-02-15">
+        <p class="post-date">15 february 2026</p>
+        <h3 class="post-title">edinburgh etch — copper patinas</h3>
+        <p class="post-preview">
+          The metal etching has been great practice with another process that's in between printmaking and metalworking. The Edinburgh etch originates from the printmaking world, for etching brass, copper, bronze plates — but it's used by folk to make more sculptural works...
+        </p>
+        <a class="read-more" href="posts/edinburgh-etch.html">read more</a>
+        <!--
+        <div class="post-images">
+          <img src="images/blog/etch-01.jpg" alt="">
+          <img src="images/blog/etch-02.jpg" alt="">
+          <img src="images/blog/etch-03.jpg" alt="">
+        </div>
+        -->
+      </article>
+
+      <!-- POST 4 -->
+      <article class="post" data-date="2026-01-20">
+        <p class="post-date">20 january 2026</p>
+        <h3 class="post-title">new studio & edinburgh etch</h3>
+        <p class="post-preview">
+          I've recently got a new studio space in the outskirts of Manchester city centre. Definitely not a space for hot metal working, but I'm looking for ways to work with metal in this space, as it'll be a while until I can afford more blacksmithing courses...
+        </p>
+        <a class="read-more" href="posts/new-studio.html">read more</a>
+        <!--
+        <div class="post-images">
+          <img src="images/blog/studio-01.jpg" alt="">
+          <img src="images/blog/studio-02.jpg" alt="">
+          <img src="images/blog/studio-03.jpg" alt="">
+        </div>
+        -->
+      </article>
+
+      <!-- POST 5 — oldest -->
+      <article class="post" data-date="2025-12-01">
+        <p class="post-date">01 december 2025</p>
+        <h3 class="post-title">the scythe</h3>
+        <p class="post-preview">
+          It was raining pretty hard outside the workshop, but it's always warm in there because of the forge. Today we started on my first project that I've suggested myself — a scythe, for chopping down weeds, or ideally collecting herbs...
+        </p>
+        <a class="read-more" href="posts/the-scythe.html">read more</a>
+        <!--
+        <div class="post-images">
+          <img src="images/blog/scythe-01.jpg" alt="">
+          <img src="images/blog/scythe-02.jpg" alt="">
+          <img src="images/blog/scythe-03.jpg" alt="">
+        </div>
+        -->
+      </article>
+
+    </div><!-- end #posts-container -->
+
+    <footer>
+      <a href="index.html"><span class="tape">← index</span></a>
+    </footer>
+
+  </div>
+
+  <script>
+    // --- cursor ---
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+    });
+
+    // --- sort toggle ---
+    // Posts are written newest-first in the HTML.
+    // The button reverses the DOM order to show oldest-first.
+    const btn       = document.getElementById('sort-btn');
+    const container = document.getElementById('posts-container');
+    let newestFirst = true;
+
+    btn.addEventListener('click', () => {
+      newestFirst = !newestFirst;
+      btn.textContent = newestFirst ? '↕ oldest first' : '↕ newest first';
+
+      // grab all posts, reverse their order in the DOM
+      const posts = [...container.querySelectorAll('.post')];
+      posts.reverse().forEach(p => container.appendChild(p));
+    });
+  </script>
+
+</body>
+</html>

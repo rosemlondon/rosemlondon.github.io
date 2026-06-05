@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>edinburgh etch — forging fragments</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .post-wrap { max-width: 680px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+    .post-title-full { font-size: 1.4rem; font-weight: normal; text-transform: lowercase; background-color: rgba(245,240,224,0.9); padding: 0.2em 0.6em; display: inline-block; border-left: 3px solid var(--muted); margin-bottom: 1.5rem; letter-spacing: 0.04em; }
+    .post-body p { font-size: 0.9rem; line-height: 1.9; margin-bottom: 1.2em; }
+    .post-images { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.6rem; margin: 1.5rem 0; }
+    .post-images img { width: 100%; aspect-ratio: 4/3; object-fit: cover; box-shadow: 2px 3px 8px rgba(0,0,0,0.15); }
+  </style>
+</head>
+<body class="inner-page">
+  <div id="cursor">+</div>
+  <div class="post-wrap">
+    <p class="breadcrumb"><a href="../index.html">myrtle cross</a> / <a href="../forging-fragments.html">forging fragments</a> / edinburgh etch</p>
+    <p class="post-date" style="background:rgba(245,240,224,0.75);padding:0.1em 0.5em;display:inline-block;font-size:0.72rem;color:var(--muted);letter-spacing:0.1em;margin-bottom:0.4rem;">15 february 2026</p><br>
+    <h1 class="post-title-full">edinburgh etch — copper patinas</h1>
+    <div class="post-body">
+      <p>The metal etching has been great practice with another process that's in between printmaking and metalworking. Essentially, the Edinburgh etch (which just means adding citric acid to Ferric Chloride to help break up the sediment to ensure a cleaner etch) is used by folk to make more sculptural works - but it originates from the printmaking world, for etching brass, copper, bronze plates.</p>
+      <p>Copper isn't cheap so I had these scrap disks to experiment on - one of the most beautiful things is how the copper changes after the etch once you've exposed it to air. These pieces look nothing like the pictures below now - taken on the same day I etched them - they've developed a patina.</p>
+      <p>One of the surprises of using ferric chloride and floating the plate upside-down, with a higher-than-suggested proportion of citric acid, is that - in keeping with the organic forms I was attempting to create little amulets of - the way the acid bit into the plate left waves.</p>
+      <!-- IMAGE SLOTS
+      <div class="post-images">
+        <img src="../images/blog/etch-01.jpg" alt="">
+        <img src="../images/blog/etch-02.jpg" alt="">
+        <img src="../images/blog/etch-03.jpg" alt="">
+      </div>
+      -->
+    </div>
+    <footer><a href="../forging-fragments.html"><span class="tape">← back to blog</span></a></footer>
+  </div>
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => { cursor.style.left = e.clientX+'px'; cursor.style.top = e.clientY+'px'; });
+  </script>
+</body>
+</html>
