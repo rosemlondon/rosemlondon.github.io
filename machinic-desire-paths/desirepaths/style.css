@@ -1,0 +1,68 @@
+[hidden] {
+  display: none;
+}
+
+body {
+  font-family: Times, serif;
+}
+
+#space-debris {
+  display: block;
+  height: 430px;
+  filter: grayscale(1);
+}
+
+.slide {
+  min-height: 40vh;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.split[hidden] {
+  display: none;
+}
+
+.split img {
+  grid-column: 2;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .split img {
+    grid-column: 1;
+  }
+}
+
+#woodlot {
+  height: 230px;
+  filter: grayscale(1);
+}
+
+#mattocks {
+  height: 330px;
+  filter: grayscale(1);
+}
+
+#redlights {
+  height: 430px;
+}
+
+#antio {
+  height: 430px;
+  visibility: hidden;
+}
+
+
+#desire {
+  height: 230px;
+}
